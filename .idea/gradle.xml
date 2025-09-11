@@ -5,7 +5,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/chap01-literal-and-variable" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="temurin-21" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/chap01-literal-and-variable" />
@@ -32,7 +32,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/chap05-array" />
-        <option name="gradleHome" value="" />
         <option name="gradleJvm" value="temurin-21" />
         <option name="modules">
           <set>
@@ -42,7 +41,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/chap06-class-and-object" />
-        <option name="gradleHome" value="" />
         <option name="gradleJvm" value="temurin-21" />
         <option name="modules">
           <set>
