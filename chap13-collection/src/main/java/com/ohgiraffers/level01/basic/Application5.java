@@ -10,7 +10,7 @@ public class Application5 {
         Set<String> treeSet = new TreeSet<>();
         StringBuilder sb = new StringBuilder();
         while(true){
-            System.out.println("단어 입력 ('exit' 입력 시 종료): ");
+            System.out.print("단어 입력 ('exit' 입력 시 종료): ");
             sb.append(sc.nextLine());
             if(sb.toString().equals("exit")){
                 break;
