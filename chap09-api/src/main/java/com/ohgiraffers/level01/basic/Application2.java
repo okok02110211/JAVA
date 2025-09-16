@@ -15,23 +15,10 @@ public class Application2 {
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);
             if(Character.isLetter(c)){
-                Character ch = Character.toLowerCase(c);
-                sb.append(ch);
-            }else if(c == ' '){
-                sb.append(" ");
-            }else if(Character.isDigit(c)){
                 sb.append(c);
             }else{
-                sb.append("");
+                sb.append(" ");
             }
-        }
-
-
-        String[] words = sb.toString().split(" ");
-        StringBuilder temp = new StringBuilder();
-
-        for(String word: words) {
-            temp = word;
         }
 
         /* ----- 입력 예시 -----
