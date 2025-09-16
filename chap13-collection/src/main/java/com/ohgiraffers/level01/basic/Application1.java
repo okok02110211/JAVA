@@ -22,6 +22,7 @@ public class Application1 {
         for(int i : list){
             sum += i;
         }
+        System.out.print("학생 인원 : "+ list.size());
         System.out.print("평균 점수 : "+ (double)(sum/list.size()));
 
 
