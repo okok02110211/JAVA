@@ -8,6 +8,7 @@ public class Application1 {
 //        파일이 존재하지 않을 경우에 대해 예외를 처리한다.
         Scanner sc = new Scanner(System.in);
         System.out.print("파일 이름을 입력하세요 : ");
+        System.out.print("오류 : 해당 이름을 가진 파일이 없습니다.");
 
         /* ----- 입력 예시 -----
          *
