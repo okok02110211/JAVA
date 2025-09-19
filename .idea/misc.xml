@@ -14,6 +14,7 @@
     <file type="web" url="file://$PROJECT_DIR$/chap12-generic" />
     <file type="web" url="file://$PROJECT_DIR$/chap13-collection" />
     <file type="web" url="file://$PROJECT_DIR$/chap16-stream" />
+    <file type="web" url="file://$PROJECT_DIR$/Final-project" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

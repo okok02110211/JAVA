@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ohgriaffers.Players.PlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-19T09:11:30.822Z" hostname="LAPTOP-3U92GQS8" time="0.041">
+  <properties/>
+  <testcase name="testTakeTurn()" classname="com.ohgriaffers.Players.PlayerTest" time="0.041"/>
+  <system-out><![CDATA[홍길동의 주사위: [6, 4, 1, 6, 6]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
