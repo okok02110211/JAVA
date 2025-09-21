@@ -5,14 +5,18 @@ import java.util.Scanner;
 
 public class Round {
     private final Player player;
-    private final Scanner sc = new Scanner(System.in);
-    public Round(Player player) {
+    private final Scanner sc;
+//    private final Scanner sc = new Scanner(System.in);
+
+    public Round(Player player,Scanner sc) {
         this.player = player;
+        this.sc = sc;
+
     }
     public void Proceed(){
+        System.out.println("======= 라운드 진행합니다 =======");
+        player.Rolling();
         for(int rerollcount = 2; rerollcount >= 0 ; rerollcount--){
-            System.out.println("======= 라운드 진행합니다 =======");
-            player.Rolling();
             System.out.println("남은 리롤 횟수 : " + (rerollcount + 1));
             System.out.println("주사위 다시굴리기 (Y/N) :");
             String input = sc.nextLine().trim();
@@ -28,11 +32,10 @@ public class Round {
                     }
                 }
                 player.reRolling(parsedIndex);
-                System.out.println("결과 :" + player.getDiceSet());
             }else{
                 break;
             }
-            System.out.println("라운도 종료");
+            System.out.println();
         }
     }
 }
