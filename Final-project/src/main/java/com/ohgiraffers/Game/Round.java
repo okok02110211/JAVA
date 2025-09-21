@@ -11,13 +11,13 @@ public class Round {
     public Round(Player player,Scanner sc) {
         this.player = player;
         this.sc = sc;
-
     }
+
     public void Proceed(){
         System.out.println("======= 라운드 진행합니다 =======");
         player.Rolling();
-        for(int rerollcount = 2; rerollcount >= 0 ; rerollcount--){
-            System.out.println("남은 리롤 횟수 : " + (rerollcount + 1));
+        for(int rerollcount = 3; rerollcount > 0 ; rerollcount--){
+            System.out.println("남은 리롤 횟수 : " + (rerollcount-1));
             System.out.println("주사위 다시굴리기 (Y/N) :");
             String input = sc.nextLine().trim();
             if(input.equalsIgnoreCase("y")){
