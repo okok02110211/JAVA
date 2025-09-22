@@ -2,13 +2,8 @@ package com.ohgiraffers.Players;
 
 import com.ohgiraffers.Categories.Category;
 
-import java.util.Collections;
-import java.util.EnumMap;
-import java.util.EnumSet;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ScoreBoard {
 
@@ -46,6 +41,13 @@ public class ScoreBoard {
         requireCategory(category);
         return recorded.contains(category);
     }
+    // 아직 기록되지 않은 카테고리 목록을 반환
+    public List<Category> getUnrecordedCategories() {
+        return Arrays.stream(Category.values())
+                .filter(c -> !recorded.contains(c))
+                .collect(Collectors.toList());
+    }
+
 
     // 점수 조회(미기록이면 Optional.empty)
     public Optional<Integer> getScore(Category category) {
