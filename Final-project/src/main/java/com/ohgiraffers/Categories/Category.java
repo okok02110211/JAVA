@@ -2,18 +2,17 @@ package com.ohgiraffers.Categories;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 public enum Category {
 
     // 상단 섹션
-    ACES("Aces(1)", "1", true, "에이스(1)"),
-    TWOS("Twos(2)", "2", true, "투스(2)"),
-    THREES("Threes(3)", "3", true, "쓰리스(3)"),
-    FOURS("Fours(4)", "4", true, "포스(4)"),
-    FIVES("Fives(5)", "5", true, "파이브스(5)"),
-    SIXES("Sixes(6)", "6", true, "식스(6)"),
+    ACES("Aces", "1", true, "에이스"),
+    TWOS("Twos", "2", true, "투"),
+    THREES("Threes", "3", true, "쓰리"),
+    FOURS("Fours", "4", true, "포"),
+    FIVES("Fives", "5", true, "파이브"),
+    SIXES("Sixes", "6", true, "식스"),
 
     // 하단 섹션
     THREE_OF_A_KIND("Three of a Kind", "TOAK", false, "쓰리카인드"),
