@@ -48,7 +48,6 @@ public class ScoreBoard {
                 .collect(Collectors.toList());
     }
 
-
     // 점수 조회(미기록이면 Optional.empty)
     public Optional<Integer> getScore(Category category) {
         requireCategory(category);

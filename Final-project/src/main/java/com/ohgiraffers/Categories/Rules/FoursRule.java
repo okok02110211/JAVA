@@ -12,6 +12,6 @@ public class FoursRule implements ScoringRules {
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.sumOfFace(DiceUtills.counts(diceValues),4);
+        return DiceUtills.sumOfFace(diceValues,4);
     }
 }

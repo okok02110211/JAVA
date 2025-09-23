@@ -12,6 +12,6 @@ public class ThreesRule implements ScoringRules {
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.sumOfFace(DiceUtills.counts(diceValues),3);
+        return DiceUtills.sumOfFace(diceValues,3);
     }
 }

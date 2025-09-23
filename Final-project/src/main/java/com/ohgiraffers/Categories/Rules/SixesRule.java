@@ -12,6 +12,6 @@ public class SixesRule implements ScoringRules {
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.sumOfFace(DiceUtills.counts(diceValues),6);
+        return DiceUtills.sumOfFace(diceValues,6);
     }
 }

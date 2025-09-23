@@ -12,6 +12,6 @@ public class AcesRule implements ScoringRules{
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.sumOfFace(DiceUtills.counts(diceValues),1);
+        return DiceUtills.sumOfFace(diceValues,1);
     }
 }

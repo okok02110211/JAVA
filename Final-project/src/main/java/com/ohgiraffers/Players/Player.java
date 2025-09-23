@@ -7,7 +7,6 @@ public class Player {
     private final DiceSet diceSet = new DiceSet();
     private final ScoreBoard scoreBoard;
 
-
     public Player(String name) {
         this.name = name;
         this.scoreBoard = new ScoreBoard(this);
@@ -18,7 +17,6 @@ public class Player {
         return diceSet;
     }
 
-//    private final 보드
     public void Rolling(){
         diceSet.rollAll();
         System.out.println(name + "의 주사위: " + diceSet);

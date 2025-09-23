@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -17,13 +18,12 @@ public class YahtzeeGameTest {
 
     @Test
     void testRun_singlePlayer_noRerolls_completesAndPrints() {
-        // 입력 준비: 13라운드 × 플레이어 1명 → 각 턴마다 "n" 1줄씩, 총 13줄
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 13; i++) sb.append("n\n");
-        ByteArrayInputStream input = new ByteArrayInputStream(sb.toString().getBytes(StandardCharsets.UTF_8));
+        // 1라운드: reroll 안 하고, 카테고리 1(ACES) 선택
+        String fakeInput = "n\n1\n";
+        ByteArrayInputStream input = new ByteArrayInputStream(fakeInput.getBytes(StandardCharsets.UTF_8));
 
         List<String> names = Collections.singletonList("홍길동");
-        YahtzeeGame game = new YahtzeeGame(names, new java.util.Scanner(input));
+        YahtzeeGame game = new YahtzeeGame(names, new Scanner(input));
 
         // 출력 캡처
         PrintStream originalOut = System.out;
@@ -37,10 +37,14 @@ public class YahtzeeGameTest {
         }
 
         String out = outContent.toString();
-        assertTrue(out.contains("===== 게임스타트 ====="));
-        assertTrue(out.contains("(임시) 카테고리 선택/기록 로직은 추후 ScoreCard/Scorer 연결 예정"));
-        assertTrue(out.contains("(임시) 최종 결과 출력 로직은 추후 ScoreCard 연결 후 구현"));
+        System.out.println(out); // 디버그용 출력
+
+        assertTrue(out.contains("홍길동"));
+        assertTrue(out.contains("에이스"));
     }
+
+
+
 
 
     @Test

@@ -12,6 +12,6 @@ public class FivesRule implements ScoringRules {
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.sumOfFace(DiceUtills.counts(diceValues),5);
+        return DiceUtills.sumOfFace(diceValues,5);
     }
 }
