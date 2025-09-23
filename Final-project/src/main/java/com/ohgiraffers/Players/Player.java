@@ -32,6 +32,8 @@ public class Player {
         System.out.println(name + "의 주사위: " + diceSet);
     }
 
-
-
+    @Override
+    public String toString(){
+        return this.name;
+    }
 }

@@ -48,7 +48,7 @@ public class YahtzeeGame {
 
         System.out.println("===== 게임스타트 =====");
         for(int round = 1; round <= TOTAL_ROUNDS ; round++){
-            System.out.println("===== "+round+" =====");
+            System.out.println("===== "+round+"라운드 =====");
             for(Player player : players){
                 System.out.println("\n=== " + player + "님의 턴" + " ===");
                 Round roundObj = new Round(player);

@@ -23,7 +23,7 @@ public class YahtzeeGameTest {
         ByteArrayInputStream input = new ByteArrayInputStream(fakeInput.getBytes(StandardCharsets.UTF_8));
 
         List<String> names = Collections.singletonList("홍길동");
-        YahtzeeGame game = new YahtzeeGame(names, new Scanner(input));
+        YahtzeeGame game = new YahtzeeGame();
 
         // 출력 캡처
         PrintStream originalOut = System.out;
@@ -55,7 +55,7 @@ public class YahtzeeGameTest {
         ByteArrayInputStream input = new ByteArrayInputStream(sb.toString().getBytes(StandardCharsets.UTF_8));
 
         List<String> names = Arrays.asList("철수", "영희");
-        YahtzeeGame game = new YahtzeeGame(names, new java.util.Scanner(input));
+        YahtzeeGame game = new YahtzeeGame();
 
         // 출력 캡처
         PrintStream originalOut = System.out;

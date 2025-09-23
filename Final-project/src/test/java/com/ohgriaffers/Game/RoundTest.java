@@ -14,7 +14,7 @@ class RoundTest {
         Scanner sc = new Scanner(new ByteArrayInputStream(input.getBytes()));
 
         Player player = new Player("홍길동");
-        Round round = new Round(player, sc);
+        Round round = new Round(player);
 
         round.Proceed();
     }

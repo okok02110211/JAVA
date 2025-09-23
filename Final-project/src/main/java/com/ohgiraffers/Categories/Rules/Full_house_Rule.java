@@ -12,6 +12,6 @@ public class Full_house_Rule implements ScoringRules {
 
     @Override
     public int getScore(int[] diceValues) {
-        return DiceUtills.isFullHouse(diceValues) ? 25 : 0;
+        return DiceUtills.isFullHouse(DiceUtills.counts(diceValues)) ? 25 : 0;
     }
 }

@@ -13,8 +13,8 @@ public class Round {
 
     public void Proceed(){
         player.Rolling();
-        for(int rerollcount = 4; rerollcount > 0 ; rerollcount--){
-            System.out.println("남은 리롤 횟수 : " + (rerollcount-1));
+        for(int rerollcount = 3; rerollcount > 0 ; rerollcount--){
+            System.out.println("남은 리롤 횟수 : " + rerollcount);
             System.out.println("주사위 다시굴리기 (Y/N) :");
             String input = sc.nextLine().trim();
             if(input.equalsIgnoreCase("y")){
